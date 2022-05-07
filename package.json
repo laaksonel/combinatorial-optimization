@@ -1,0 +1,19 @@
+{
+  "name": "hello",
+  "esy": {
+    "buildsInSource": "_build",
+    "build": "dune build @all"
+  },
+  "scripts": {
+    "watch": "esy b dune build -w",
+    "start": "esy b dune exec ./bin/main.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "2.9.3",
+    "ocaml": "4.13.x"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*",
+    "@opam/ocamlformat": "*"
+  }
+}
