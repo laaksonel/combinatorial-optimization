@@ -1,4 +1,10 @@
 (executable
  (name main)
  (public_name main.exe)
- (libraries suba subb))
+ (libraries knapsack01))
+
+(rule
+ (alias runtest)
+ (action
+ (run ./main.exe)))
+
